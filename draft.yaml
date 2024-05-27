@@ -1,0 +1,45 @@
+models:
+
+  Induk:
+    jenis_kelamin: enum:jantan,betina
+    umur: integer
+    keterangan: text
+    gambar: string
+
+  JenisHewan:
+    jenis_hewan: string:100
+  
+  Hewan:
+    jenis_kelamin: enum:jantan,betina
+    keterangan: text
+    id_jenis_hewan: id foreign:JenisHewan.id
+    id_induk: id foreign:Induk.id
+  
+
+  Profile:
+    alamat: string
+    foto_profil: string:nullable
+    id_user: id foreign:Users.id
+
+  TumbuhKembang:
+    umur: integer
+    tinggi: integer
+    berat_badan: integer
+    jumlah_gigi: integer
+    id_hewan:id foreign: Hewan.id
+
+  KelahiranKematian:
+    tanggal: date
+    jenis:enum: kematian,kelahiran
+    keterangan: text
+    id_hewan: id foreign:Hewan.id
+    
+  Penyakit:
+    jenis_penyakit: string
+    gejala: string
+    keterangan: text
+    id_hewan: id foreign:Hewan.id
+
+
+
+
