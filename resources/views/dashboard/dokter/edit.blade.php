@@ -14,7 +14,7 @@
             <span class="sr-only">Info</span>
             <div>
               <span class="font-medium">{{session('error')}}</span>
-              
+                
             </div>     
           </div>
         @endif
