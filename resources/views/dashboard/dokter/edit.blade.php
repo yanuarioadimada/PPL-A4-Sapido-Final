@@ -1,5 +1,5 @@
 <x-app-layout>
-
+ 
     
     <form class="m-4 p-10 rounded-lg bg-white" action="{{route('konsultasi.update',$data->id)}}" method="POST">
          
