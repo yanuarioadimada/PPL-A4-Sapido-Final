@@ -15,7 +15,7 @@
             <div> 
               <span class="font-medium">{{session('error')}}</span>
                  
-            </div>     
+            </div>      
           </div>
         @endif
         <div class="mb-5">
