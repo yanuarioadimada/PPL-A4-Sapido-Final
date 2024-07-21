@@ -5,7 +5,7 @@
  
     <form method="POST" action="{{ route('password.confirm') }}">
         @csrf
- {{-- PASSWORDDDDD --}}
+ {{-- PASSWORDDDDD --}} 
         <!-- Password --> 
      
         <div> 
